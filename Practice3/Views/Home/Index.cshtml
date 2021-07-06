@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                @item.DateTime.ToString("dd/MM/yyyy HH:mm") - @item.Name
+            </li>
+        }
+    </ul>
+</div>
